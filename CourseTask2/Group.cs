@@ -10,7 +10,7 @@ namespace CourseTask
     {
         private static int id = 0;
         public string Name { get; set; }
-        public List<Student> Students { get; } = [];
+        public CustomList<Student> Students { get; } = [];
         public int Id { get; }
         
 
