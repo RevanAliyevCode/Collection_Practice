@@ -13,7 +13,7 @@ namespace CourseTask
         public string Name { get; set; }
         public string Surname { get; set; }
         public int Age { get; set; }
-        public List<int> Grades { get; } = [];
+        public CustomList<int> Grades { get; } = [];
 
         public Student(string name, string surname, int age)
         {
