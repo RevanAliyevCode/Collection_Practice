@@ -9,7 +9,7 @@ namespace CourseTask
     public class Course
     {
         public string Name { get; set; }
-        public List<Group> Groups { get; } = [];
+        public CustomList<Group> Groups { get; } = [];
 
         public Course(string name)
         {
