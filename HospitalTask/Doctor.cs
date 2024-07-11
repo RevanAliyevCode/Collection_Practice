@@ -19,9 +19,9 @@ namespace HospitalTask
 
         public bool ScheduleAppointment(Appointment appointment)
         {
-            if (appointments.Any(a => a.Date == appointment.Date))
+            if (appointments.Any(a => a.Date <= appointment.Date && appointment.Date < a.Date.AddHours(1)))
             {
-                return false; // Appointment slot is already taken
+                return false;
             }
 
             appointments.Add(appointment);
